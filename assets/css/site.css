@@ -80,7 +80,7 @@ ul.ticks li::before{content:"";position:absolute;left:0;top:.42em;width:.9em;hei
 .card .price{margin:var(--sp-4) 0 var(--sp-2)}
 .card .fill{flex:1}
 .card--feature{border-color:var(--c-brand);box-shadow:0 0 0 3px var(--c-brand-tint),var(--sh-card)}
-.tag{display:inline-block;font-size:var(--fs-xs);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--c-brand-deep);background:var(--c-brand-tint);border-radius:var(--r-pill);padding:4px 10px;margin-bottom:var(--sp-3)}
+.tag{display:inline-block;align-self:flex-start;font-size:var(--fs-xs);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--c-brand-deep);background:var(--c-brand-tint);border-radius:var(--r-pill);padding:4px 10px;margin-bottom:var(--sp-3)}
 
 /* Work */
 .work{display:grid;gap:var(--sp-5);grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
