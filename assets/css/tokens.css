@@ -1,0 +1,45 @@
+/* ScoutAI Design — design tokens. Every visual value lives here. */
+:root{
+  /* Color — matches scoutai.site (green on warm off-white) */
+  --c-bg:#f7f6f1;
+  --c-surface:#ffffff;
+  --c-surface-2:#eef2ee;
+  --c-text:#2f3a35;
+  --c-text-strong:#0e1f18;
+  --c-text-mute:#66736d;
+  --c-line:#dfe4df;
+  --c-brand:#0f7a4e;
+  --c-brand-hot:#118a58;
+  --c-brand-deep:#0b5c3b;
+  --c-brand-tint:#e2f2ea;
+  --c-on-brand:#ffffff;
+  --c-accent:#c9a227;
+
+  /* Type */
+  --f-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-display:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --fs-xs:.78rem;
+  --fs-sm:.9rem;
+  --fs-base:1.02rem;
+  --fs-md:1.18rem;
+  --fs-h3:1.25rem;
+  --fs-h2:clamp(1.7rem,3.4vw,2.4rem);
+  --fs-h1:clamp(2.2rem,5.6vw,3.6rem);
+  --fs-price:2rem;
+  --lh-body:1.6;
+  --lh-tight:1.1;
+  --ls-label:.08em;
+
+  /* Space */
+  --sp-1:.25rem; --sp-2:.5rem; --sp-3:.75rem; --sp-4:1rem; --sp-5:1.5rem; --sp-6:2rem; --sp-7:3rem; --sp-8:4rem;
+  --sp-gutter:clamp(1rem,4vw,2rem);
+  --sp-section:clamp(3rem,8vw,5.5rem);
+  --container:1100px;
+
+  /* Shape + depth */
+  --r-sm:10px; --r-md:16px; --r-lg:22px; --r-pill:999px;
+  --sh-card:0 1px 2px rgba(14,31,24,.05),0 10px 30px -12px rgba(14,31,24,.15);
+  --sh-brand:0 8px 22px -8px rgba(15,122,78,.55);
+  --t-fast:.18s ease;
+  --z-header:50; --z-callbar:60; --z-skip:100;
+}
