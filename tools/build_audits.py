@@ -93,7 +93,7 @@ def build(slug, s):
         ("Structured data (JSON-LD types)", ", ".join(jsonld.get("types") or []) or "none"),
         ("Address / phone / hours in schema", f"{'yes' if jsonld.get('has_address') else 'no'} / {'yes' if jsonld.get('has_telephone') else 'no'} / {'yes' if jsonld.get('has_openingHours') else 'no'}"),
         ("FAQ schema", "yes" if s.get("faq", {}).get("faq_schema") else "no"),
-        ("Analytics / pixels found", ", ".join(k.upper() for k, v in mk.items() if v) or "none"),
+        ("Analytics / pixels found", ", ".join(k.upper().replace("_"," ") for k, v in mk.items() if v and k not in ("recaptcha","hcaptcha","turnstile")) or "none"),
         ("Tap-to-call link above the fold (mobile)", "yes" if conv.get("tel_in_first_20pct") else "no"),
         ("Phone matches BBB listing", "yes" if nap.get("bbb_phone_found") or (nap.get("bbb_phone") in (nap.get("phones_in_source") or [])) else "no / not found on page"),
         ("Footer copyright", ", ".join(years) or "none found"),
@@ -118,7 +118,7 @@ def build(slug, s):
     ])
 
     issues_html = "".join(
-        f'<div class="issue"><div class="num">{i:02d}</div><div><h3>{esc(first_sentence(t))}</h3><p>{md_inline(t[len(first_sentence(t)):].strip())}</p></div></div>'
+        f'<div class="issue"><div class="num">{i:02d}</div><div><h3>{esc(first_sentence(t))}</h3>' + (f'<p>{md_inline(t[len(first_sentence(t)):].strip())}</p>' if t[len(first_sentence(t)):].strip() else '') + '</div></div>'
         for i, t in enumerate(issues, 1)
     )
     wins_html = "".join(f"<li>{md_inline(w)}</li>" for w in wins)
