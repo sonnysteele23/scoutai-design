@@ -1,0 +1,40 @@
+/* ScoutAI Design — website teardown report pages. Values from tokens.css. Staged here until the repo is re-pinned. */
+.report{max-width:860px;margin:0 auto;padding:0 var(--sp-gutter)}
+.report-head{padding:var(--sp-7) 0 var(--sp-5);border-bottom:1px solid var(--c-line)}
+.report-head .for{font-size:var(--fs-sm);color:var(--c-text-mute);margin-bottom:var(--sp-2)}
+.report-head h1{font-size:var(--fs-h2);max-width:none}
+.report-head .meta{display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);font-size:var(--fs-sm);color:var(--c-text-mute);margin-top:var(--sp-3)}
+.scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--sp-3);margin:var(--sp-5) 0}
+.score{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-md);padding:var(--sp-4);box-shadow:var(--sh-card)}
+.score .n{font-size:2.2rem;font-weight:800;line-height:1;color:var(--c-text-strong)}
+.score .n small{font-size:var(--fs-sm);font-weight:500;color:var(--c-text-mute)}
+.score .l{font-size:var(--fs-xs);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--c-text-mute);margin-top:var(--sp-2)}
+.score--bad .n{color:#b42318}
+.score--warn .n{color:#b54708}
+.score--ok .n{color:var(--c-brand-deep)}
+.report section{padding:var(--sp-6) 0;border-bottom:1px solid var(--c-line)}
+.report h2{font-size:1.45rem}
+.issue{display:grid;grid-template-columns:36px 1fr;gap:var(--sp-3);padding:var(--sp-4) 0;border-top:1px solid var(--c-line)}
+.issue:first-of-type{border-top:0}
+.issue .num{font-weight:800;color:var(--c-brand-hot);font-size:var(--fs-md)}
+.issue h3{font-size:1.05rem;margin:0 0 .3em}
+.issue p{margin:.3em 0}
+.issue .ev{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--fs-xs);background:var(--c-surface-2);border-radius:var(--r-sm);padding:var(--sp-2) var(--sp-3);color:var(--c-text);overflow-x:auto;white-space:pre-wrap}
+.issue .cost{font-size:var(--fs-sm);color:#b42318;font-weight:600}
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-4)}
+.plan .card h3{margin-bottom:var(--sp-2)}
+.plan ul{padding-left:1.1em;margin:0}
+.plan li{margin:.35em 0}
+.offer{background:var(--c-text-strong);color:#dfe8e3;border-radius:var(--r-lg);padding:var(--sp-6);margin:var(--sp-6) 0}
+.offer h2{color:#fff}
+.offer .price{color:#fff;font-size:1.6rem;margin:var(--sp-3) 0}
+.offer .price small{color:#a9b8b0}
+.offer a.btn{margin-top:var(--sp-3)}
+.offer a:not(.btn){color:#fff}
+.method{font-size:var(--fs-sm);color:var(--c-text-mute)}
+.method ul{padding-left:1.1em}
+@media (max-width:600px){.issue{grid-template-columns:1fr}.issue .num{display:none}}
+.ev-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+.ev-table th,.ev-table td{text-align:left;padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--c-line);vertical-align:top}
+.ev-table th{font-weight:600;color:var(--c-text-strong);width:42%}
+.report code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--c-surface-2);padding:0 .3em;border-radius:4px}

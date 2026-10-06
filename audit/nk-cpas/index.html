@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Website teardown for N&amp;K CPAs, Inc. — ScoutAI Design</title>
+<meta name="description" content="A measured review of https://www.nkcpa.com/: speed, search, AI-search readiness and conversion, with fixes and prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/audit.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4e'/%3E%3Cpath d='M16 7l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9v-6l7-3z' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="ScoutAI Design home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ScoutAI Design <span class="sub">Honolulu</span></a>
+  <nav class="nav" aria-label="Primary"><a class="btn btn--primary" href="tel:+14135706737">413-570-6737</a></nav>
+</div></header>
+<main class="report">
+  <div class="report-head">
+    <div class="for">Prepared for N&amp;K CPAs, Inc. · Honolulu · private link, not indexed</div>
+    <h1>What your website is costing you, measured.</h1>
+    <p class="lede">I ran <a href="https://www.nkcpa.com/" rel="noopener">www.nkcpa.com</a> through the same checks Google and the AI search engines use. Here is what came back, what it costs you in calls, and what I would fix first.</p>
+    <div class="meta"><span>Checked 2026-10-05 16:06 HST</span><span>Platform: Duda (irp.cdn-website.com assets, dm* classes)</span></div>
+  </div>
+
+  <div class="scores"><div class="score score--warn"><div class="n">72<small>/100</small></div><div class="l">Technical SEO</div></div><div class="score score--warn"><div class="n">75<small>/100</small></div><div class="l">Performance</div></div><div class="score score--bad"><div class="n">45<small>/100</small></div><div class="l">AI-search readiness</div></div><div class="score score--bad"><div class="n">40<small>/100</small></div><div class="l">Marketing &amp; conversion</div></div></div>
+  <p class="note">Clean HTTPS/canonical/HSTS, 411-URL sitemap, no broken links; but 2 of 5 images lack alt, footer says © 2024, and mobile LCP measured 32.2 s · Only a WebSite JSON-LD block; no LocalBusiness/Organization with address, phone or hours; no FAQ; founders named (1973) but no current leadership on /who-we-are</p>
+
+  <section>
+    <h2>The five findings that matter</h2>
+    <div class="issue"><div class="num">01</div><div><h3>Mobile hero takes 32.2 s to paint (Lighthouse mobile LCP 32.2 s; desktop LCP 6.0 s).</h3><p>Google&#x27;s &#x27;good&#x27; threshold is 2.5 s. On a phone, a prospect sees a blank hero for half a minute - most leave. Performance score survives at 75 only because everything else is fast.</p></div></div><div class="issue"><div class="num">02</div><div><h3>Google has no machine-readable business card.</h3><p>The only schema on the home page is <code>&quot;@type&quot;:&quot;WebSite&quot;</code>. No LocalBusiness/AccountingService block with the 999 Bishop St address, (808) 524-2255 or hours - so AI answers and the Maps knowledge panel have nothing to cite from the site itself.</p></div></div><div class="issue"><div class="num">03</div><div><h3>Zero analytics.</h3><p>No GA4 (G-...), GTM or Meta pixel ID appears in the page source. The firm cannot see which pages produce the &#x27;Connect&#x27; form submissions or calls.</p></div></div><div class="issue"><div class="num">04</div><div><h3>Phone is not reachable above the fold on mobile: the single `tel:` link sits in the footer (not within the first 20% of the HTML).</h3><p>Prospects on a phone must scroll past the whole page to tap-call.</p></div></div><div class="issue"><div class="num">05</div><div><h3>Stale trust signals: footer copyright reads &#x27;© 2024&#x27; (two years old); logo images carry empty alt text; no hours anywhere in visible text.</h3><p></p></div></div>
+    <p class="note">These are measurements, not design opinions. Each one is something your current provider could have run in ten minutes.</p>
+  </section>
+
+  <section>
+    <h2>What I would do in the first week</h2>
+    <ul class="ticks"><li>Add a LocalBusiness/AccountingService JSON-LD block (name, 999 Bishop St Suite 2200, (808) 524-2255, hours, sameAs for the existing Facebook/Instagram/LinkedIn/Maps links) - Duda&#x27;s SEO panel supports custom head code.</li><li>Install GA4 + GTM; mark the Connect form submit and tel: taps as conversions.</li><li>Add a sticky &#x27;Call (808) 524-2255&#x27; button in the Duda header for mobile.</li><li>Fix the hero: compress/resize the LCP image or swap the hero video for a poster image; set fetchpriority=high.</li><li>Alt text on the two logo images; update the footer year to 2026; add office hours in the footer.</li></ul>
+  </section>
+
+  <div class="offer">
+    <h2>Recommended: a one-week tune-up, then measure</h2>
+    <p>Quick wins. The Duda site is structurally sound; the gaps are measurement, schema and one slow hero asset. No rebuild needed.</p><p class="price">Tune-up $1,800 one-time <small>schema, analytics, call path, speed fixes, stale content, done in one week</small></p><p class="price">Presence $495/month <small>Google Business Profile management, monthly posts and review responses, citation hygiene, quarterly AI-search check, hosting and small edits included; cancel any month</small></p>
+    <p>A rebuild is not justified. A design refresh could consolidate the duplicated &#x27;Your Success Begins Here&#x27; H2 and give the 411-URL Insights archive a real hub page for topical authority, but the ROI is in schema + analytics + hero fix.</p><p>If you do want a fresh build later: Launch from $2,900, Care $79/month, first year included with any build.</p>
+    <p>Fixed prices, no retainer required, you own everything. First call is free and takes fifteen minutes.</p>
+    <a class="btn btn--primary" href="sms:+14135706737?body=Hi%20Sonny%2C%20I%20read%20the%20N&amp;K%20CPAs,%20Inc.%20report.">Text Sonny · 413-570-6737</a>
+    <p>Or email <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></p>
+  </div>
+
+  <section class="method">
+    <h2>Evidence and method</h2>
+    <div style="overflow-x:auto"><table class="ev-table"><tr><th>Platform</th><td>Duda (irp.cdn-website.com assets, dm* classes)</td></tr><tr><th>Checked</th><td>2026-10-05 16:06 HST</td></tr><tr><th>Mobile Lighthouse performance</th><td>75/100</td></tr><tr><th>Largest Contentful Paint (mobile)</th><td>32.2 s (Google&#x27;s good threshold: 2.5 s)</td></tr><tr><th>Desktop performance</th><td>74/100</td></tr><tr><th>Page weight (mobile load)</th><td>6,072 KB</td></tr><tr><th>Structured data (JSON-LD types)</th><td>WebSite</td></tr><tr><th>Address / phone / hours in schema</th><td>no / no / no</td></tr><tr><th>FAQ schema</th><td>no</td></tr><tr><th>Analytics / pixels found</th><td>RECAPTCHA</td></tr><tr><th>Tap-to-call link above the fold (mobile)</th><td>no</td></tr><tr><th>Phone matches BBB listing</th><td>yes</td></tr><tr><th>Footer copyright</th><td>2024</td></tr><tr><th>Sitemap URLs</th><td>411</td></tr><tr><th>Broken internal links (sample)</th><td>0</td></tr></table></div>
+    <p>Performance numbers come from Lighthouse 13.5, the same engine behind Google&#x27;s PageSpeed Insights, run on 2026-10-05 in mobile mode with simulated throttling. Scores vary about ten points between runs; treat them as a range, not a verdict. Structured data, analytics tags, call links and copyright were read directly from the page source. Facebook and Yelp block automated checks, so social activity was not scored. Budget band is an estimate from public signals only (High ($2,500+)).</p>
+    <p>Prepared by Sonny Steele, ScoutAI Design, Honolulu. Fifteen years designing products for banks, healthcare and e-commerce companies; founder of <a href="https://scoutai.site/" rel="noopener">ScoutAI</a>. I design and write the code myself.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 ScoutAI Design · Honolulu, Hawaii</span><span><a href="/">design.scoutai.site</a> · <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></span></div></footer>
+</body>
+</html>

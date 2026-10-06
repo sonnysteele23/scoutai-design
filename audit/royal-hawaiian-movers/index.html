@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Website teardown for Royal Hawaiian Movers, Inc. — ScoutAI Design</title>
+<meta name="description" content="A measured review of https://www.royalhawaiianmovers.com/: speed, search, AI-search readiness and conversion, with fixes and prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/audit.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4e'/%3E%3Cpath d='M16 7l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9v-6l7-3z' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="ScoutAI Design home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ScoutAI Design <span class="sub">Honolulu</span></a>
+  <nav class="nav" aria-label="Primary"><a class="btn btn--primary" href="tel:+14135706737">413-570-6737</a></nav>
+</div></header>
+<main class="report">
+  <div class="report-head">
+    <div class="for">Prepared for Royal Hawaiian Movers, Inc. · Honolulu · private link, not indexed</div>
+    <h1>What your website is costing you, measured.</h1>
+    <p class="lede">I ran <a href="https://www.royalhawaiianmovers.com/" rel="noopener">www.royalhawaiianmovers.com</a> through the same checks Google and the AI search engines use. Here is what came back, what it costs you in calls, and what I would fix first.</p>
+    <div class="meta"><span>Checked 2026-10-05 16:07 HST</span><span>Platform: WordPress on WP Engine (x-powered-by: WP Engine) with Avada theme, NitroPack optimizer (meta generator=NitroPack), Gravity Forms, LiveChat, Hotjar, GTM</span></div>
+  </div>
+
+  <div class="scores"><div class="score score--warn"><div class="n">68<small>/100</small></div><div class="l">Technical SEO</div></div><div class="score score--warn"><div class="n">71<small>/100</small></div><div class="l">Performance</div></div><div class="score score--warn"><div class="n">62<small>/100</small></div><div class="l">AI-search readiness</div></div><div class="score score--warn"><div class="n">78<small>/100</small></div><div class="l">Marketing &amp; conversion</div></div></div>
+  <p class="note">Good title/description/canonical/464-URL sitemap and no broken links, but 1.53 MB HTML, 45 of 58 &lt;img&gt; tags without alt (NitroPack lazy placeholders), no HSTS, robots.txt cross-references 8 sister-company sitemaps, desktop CLS 0.635 · Corporation JSON-LD with ContactPoint but no PostalAddress/hours; an FAQ sitemap exists yet no FAQPage schema on the home page; About page names no people; strong service-page architecture</p>
+
+  <section>
+    <h2>The five findings that matter</h2>
+    <div class="issue"><div class="num">01</div><div><h3>Name-Address-Phone mismatch with the BBB.</h3><p>The BBB-listed number (808) 836-4548 appears nowhere on the home page or /contact/ (0 matches); the site publishes 808-833-1611 for Oahu and the clickable tel: link is (888) 717-6925. Google cross-checks phone numbers across BBB, Maps and the site; inconsistency erodes local-pack ranking and confuses callers.</p></div></div><div class="issue"><div class="num">02</div><div><h3>Desktop layout jumps badly: Lighthouse desktop CLS 0.635 (threshold for &#x27;good&#x27; is 0.1).</h3><p>Content shifts under the cursor after load - a known cause of mis-clicks and a direct Core Web Vitals ranking penalty.</p></div></div><div class="issue"><div class="num">03</div><div><h3>1.53 MB of HTML on the home page (vs.</h3><p>~60-200 KB for the rest of this batch). NitroPack inlines everything; mobile LCP measured 4.6 s.</p></div></div><div class="issue"><div class="num">04</div><div><h3>45 of 58 images have no alt attribute in the delivered HTML (data:image/svg placeholders from NitroPack).</h3><p>Screen readers and Google Images see nothing; Lighthouse accessibility 81, best-practices 58.</p></div></div><div class="issue"><div class="num">05</div><div><h3>robots.txt declares sitemaps for eight other domains (dewittguam.com, royalalaskanmovers.com, approvedforwarders.com, ...).</h3><p>Google ignores cross-host sitemap declarations unless the host is verified in the same Search Console property, and it signals a copy-pasted template.</p></div></div>
+    <p class="note">These are measurements, not design opinions. Each one is something your current provider could have run in ten minutes.</p>
+  </section>
+
+  <section>
+    <h2>What I would do in the first week</h2>
+    <ul class="ticks"><li>Put (808) 836-4548 (or whichever number is canonical) on the site, the BBB profile and Google Business Profile - one number everywhere; make the header tel: an 808 number.</li><li>Reserve space for the elements that shift on desktop (hero slider / notification bar) to kill the 0.635 CLS.</li><li>Verify NitroPack&#x27;s lazy-load preserves alt attributes; otherwise disable image lazy-loading for above-the-fold logos.</li><li>Add PostalAddress + openingHours to the existing Corporation schema; emit FAQPage schema on the FAQ pages (the avada_faq post type already exists).</li><li>Trim robots.txt to this domain&#x27;s sitemap only.</li></ul>
+  </section>
+
+  <div class="offer">
+    <h2>Recommended: a one-week tune-up, then measure</h2>
+    <p>Quick wins. This is a mature marketing site with measurable, fixable defects (NAP, CLS, alt text, schema). No rebuild.</p><p class="price">Tune-up $1,800 one-time <small>schema, analytics, call path, speed fixes, stale content, done in one week</small></p><p class="price">Presence $495/month <small>Google Business Profile management, monthly posts and review responses, citation hygiene, quarterly AI-search check, hosting and small edits included; cancel any month</small></p>
+    <p>Not needed. A rebuild would mainly let them drop NitroPack by fixing the theme weight at source, but the business case is weak compared with the five fixes above.</p><p>If you do want a fresh build later: Launch from $2,900, Care $79/month, first year included with any build.</p>
+    <p>Fixed prices, no retainer required, you own everything. First call is free and takes fifteen minutes.</p>
+    <a class="btn btn--primary" href="sms:+14135706737?body=Hi%20Sonny%2C%20I%20read%20the%20Royal%20Hawaiian%20Movers,%20Inc.%20report.">Text Sonny · 413-570-6737</a>
+    <p>Or email <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></p>
+  </div>
+
+  <section class="method">
+    <h2>Evidence and method</h2>
+    <div style="overflow-x:auto"><table class="ev-table"><tr><th>Platform</th><td>WordPress on WP Engine (x-powered-by: WP Engine) with Avada theme, NitroPack optimizer (meta generator=NitroPack), Gravity Forms, LiveChat, Hotjar, GTM</td></tr><tr><th>Checked</th><td>2026-10-05 16:07 HST</td></tr><tr><th>Mobile Lighthouse performance</th><td>75/100</td></tr><tr><th>Largest Contentful Paint (mobile)</th><td>4.6 s (Google&#x27;s good threshold: 2.5 s)</td></tr><tr><th>Desktop performance</th><td>64/100</td></tr><tr><th>Page weight (mobile load)</th><td>2,063 KB</td></tr><tr><th>Structured data (JSON-LD types)</th><td>ContactPoint, Corporation, ImageObject, SiteNavigationElement</td></tr><tr><th>Address / phone / hours in schema</th><td>no / yes / no</td></tr><tr><th>FAQ schema</th><td>no</td></tr><tr><th>Analytics / pixels found</th><td>GTM, HOTJAR, CHAT_WIDGET, NEWSLETTER, RECAPTCHA, GA_IDS</td></tr><tr><th>Tap-to-call link above the fold (mobile)</th><td>yes</td></tr><tr><th>Phone matches BBB listing</th><td>no / not found on page</td></tr><tr><th>Footer copyright</th><td>2026</td></tr><tr><th>Sitemap URLs</th><td>1181</td></tr><tr><th>Broken internal links (sample)</th><td>0</td></tr></table></div>
+    <p>Performance numbers come from Lighthouse 13.5, the same engine behind Google&#x27;s PageSpeed Insights, run on 2026-10-05 in mobile mode with simulated throttling. Scores vary about ten points between runs; treat them as a range, not a verdict. Structured data, analytics tags, call links and copyright were read directly from the page source. Facebook and Yelp block automated checks, so social activity was not scored. Budget band is an estimate from public signals only (High ($2,500+)).</p>
+    <p>Prepared by Sonny Steele, ScoutAI Design, Honolulu. Fifteen years designing products for banks, healthcare and e-commerce companies; founder of <a href="https://scoutai.site/" rel="noopener">ScoutAI</a>. I design and write the code myself.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 ScoutAI Design · Honolulu, Hawaii</span><span><a href="/">design.scoutai.site</a> · <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></span></div></footer>
+</body>
+</html>

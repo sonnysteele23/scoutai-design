@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Website teardown for Mattoch &amp; Kirley, LLLC — ScoutAI Design</title>
+<meta name="description" content="A measured review of https://mattochkirley.com/: speed, search, AI-search readiness and conversion, with fixes and prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/audit.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4e'/%3E%3Cpath d='M16 7l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9v-6l7-3z' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="ScoutAI Design home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ScoutAI Design <span class="sub">Honolulu</span></a>
+  <nav class="nav" aria-label="Primary"><a class="btn btn--primary" href="tel:+14135706737">413-570-6737</a></nav>
+</div></header>
+<main class="report">
+  <div class="report-head">
+    <div class="for">Prepared for Mattoch &amp; Kirley, LLLC · Honolulu · private link, not indexed</div>
+    <h1>What your website is costing you, measured.</h1>
+    <p class="lede">I ran <a href="https://mattochkirley.com/" rel="noopener">mattochkirley.com</a> through the same checks Google and the AI search engines use. Here is what came back, what it costs you in calls, and what I would fix first.</p>
+    <div class="meta"><span>Checked 2026-10-05 16:07 HST</span><span>Platform: SearchAtlas &#x27;OTTO&#x27; site builder (form posts to api.builder.searchatlas.com; searchatlas.com/api/track/v1.js; server: UploadServer)</span></div>
+  </div>
+
+  <div class="scores"><div class="score score--bad"><div class="n">58<small>/100</small></div><div class="l">Technical SEO</div></div><div class="score score--warn"><div class="n">79<small>/100</small></div><div class="l">Performance</div></div><div class="score score--warn"><div class="n">72<small>/100</small></div><div class="l">AI-search readiness</div></div><div class="score score--bad"><div class="n">42<small>/100</small></div><div class="l">Marketing &amp; conversion</div></div></div>
+  <p class="note">Good title/description/H1, 57-URL sitemap, 0 missing alt, canonical; but robots.txt is a 404, https://www. redirects DOWN to http:// before coming back to https, no HSTS, no Open Graph/Twitter tags, BBB seal image 404; Lighthouse page weight 9.6 MB, mobile LCP 6.5 s · LegalService JSON-LD with three PostalAddress offices, telephone and OpeningHoursSpecification; attorneys named (Daniel Kirley, Ian Scott); Google reviews quoted; practice-area pages; llms.txt present; no FAQPage schema</p>
+
+  <section>
+    <h2>The five findings that matter</h2>
+    <div class="issue"><div class="num">01</div><div><h3>No robots.txt (HTTP 404).</h3><p>Not fatal, but Google has no sitemap pointer and the sitemap is only discoverable by guessing /sitemap.xml.</p></div></div><div class="issue"><div class="num">02</div><div><h3>Insecure redirect hop: https://www.mattochkirley.com/ -&gt; 301 -&gt; http://mattochkirley.com/ -&gt; 301 -&gt; https://mattochkirley.com:443/.</h3><p>Anyone typing &#x27;www&#x27; is bounced through plain HTTP; browsers may show a warning and the :443 in the Location header is sloppy.</p></div></div><div class="issue"><div class="num">03</div><div><h3>No Open Graph or Twitter Card tags at all (og: {} / twitter: {}).</h3><p>Shared links show no image, no description - for a firm that relies on referrals being passed around, that is a visible credibility hit.</p></div></div><div class="issue"><div class="num">04</div><div><h3>No first-party analytics: no GA4, GTM or Meta pixel.</h3><p>The only tracker is searchatlas.com/api/track/v1.js, so the data lives with the vendor. The contact form posts to api.builder.searchatlas.com - if the vendor contract ends, the form and the site go with it.</p></div></div><div class="issue"><div class="num">05</div><div><h3>Zero social links and a broken BBB seal (bbb.org/seals/blue-seal-293-61-whitetxt-bbb-1000133684.png -&gt; 404).</h3><p>The &#x27;Trusted across the islands&#x27; section has nothing external to click.</p></div></div>
+    <p class="note">These are measurements, not design opinions. Each one is something your current provider could have run in ten minutes.</p>
+  </section>
+
+  <section>
+    <h2>What I would do in the first week</h2>
+    <ul class="ticks"><li>Add robots.txt with the sitemap line.</li><li>Fix the www redirect to go straight to https://mattochkirley.com/ (one 301) and add HSTS.</li><li>Add OG/Twitter meta with a 1200x630 firm image.</li><li>Install GA4 + GTM in the builder&#x27;s head-code slot; add a Meta pixel (PI firms retarget heavily).</li><li>Fix the BBB seal URL; add LinkedIn/Facebook/Google Business Profile links in the footer.</li></ul>
+  </section>
+
+  <div class="offer">
+    <h2>Recommended: a one-week tune-up, then measure</h2>
+    <p>Quick wins on measurement and social; but the site lives inside a SEO-vendor builder (form endpoint and tracker are SearchAtlas) - ownership/portability is the strategic risk, so a rebuild on WordPress they own is worth pricing.</p><p class="price">Tune-up $1,800 one-time <small>schema, analytics, call path, speed fixes, stale content, done in one week</small></p><p class="price">Presence $495/month <small>Google Business Profile management, monthly posts and review responses, citation hygiene, quarterly AI-search check, hosting and small edits included; cancel any month</small></p>
+    <p>A rebuild onto a self-owned WordPress/Next.js site removes the SearchAtlas dependency (forms, tracking, hosting) and lets the firm keep its 57 pages and schema. Worth proposing as phase 2; price it against the vendor&#x27;s monthly fee.</p><p>If you do want a fresh build later: Launch from $2,900, Care $79/month, first year included with any build.</p>
+    <p>Fixed prices, no retainer required, you own everything. First call is free and takes fifteen minutes.</p>
+    <a class="btn btn--primary" href="sms:+14135706737?body=Hi%20Sonny%2C%20I%20read%20the%20Mattoch%20&amp;%20Kirley,%20LLLC%20report.">Text Sonny · 413-570-6737</a>
+    <p>Or email <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></p>
+  </div>
+
+  <section class="method">
+    <h2>Evidence and method</h2>
+    <div style="overflow-x:auto"><table class="ev-table"><tr><th>Platform</th><td>SearchAtlas &#x27;OTTO&#x27; site builder (form posts to api.builder.searchatlas.com; searchatlas.com/api/track/v1.js; server: UploadServer)</td></tr><tr><th>Checked</th><td>2026-10-05 16:07 HST</td></tr><tr><th>Mobile Lighthouse performance</th><td>72/100</td></tr><tr><th>Largest Contentful Paint (mobile)</th><td>6.5 s (Google&#x27;s good threshold: 2.5 s)</td></tr><tr><th>Desktop performance</th><td>90/100</td></tr><tr><th>Page weight (mobile load)</th><td>9,605 KB</td></tr><tr><th>Structured data (JSON-LD types)</th><td>AdministrativeArea, ContactPoint, LegalService, OpeningHoursSpecification, Place, PostalAddress, State</td></tr><tr><th>Address / phone / hours in schema</th><td>yes / yes / no</td></tr><tr><th>FAQ schema</th><td>no</td></tr><tr><th>Analytics / pixels found</th><td>none</td></tr><tr><th>Tap-to-call link above the fold (mobile)</th><td>no</td></tr><tr><th>Phone matches BBB listing</th><td>yes</td></tr><tr><th>Footer copyright</th><td>2026</td></tr><tr><th>Sitemap URLs</th><td>57</td></tr><tr><th>Broken internal links (sample)</th><td>0</td></tr></table></div>
+    <p>Performance numbers come from Lighthouse 13.5, the same engine behind Google&#x27;s PageSpeed Insights, run on 2026-10-05 in mobile mode with simulated throttling. Scores vary about ten points between runs; treat them as a range, not a verdict. Structured data, analytics tags, call links and copyright were read directly from the page source. Facebook and Yelp block automated checks, so social activity was not scored. Budget band is an estimate from public signals only (High ($2,500+)).</p>
+    <p>Prepared by Sonny Steele, ScoutAI Design, Honolulu. Fifteen years designing products for banks, healthcare and e-commerce companies; founder of <a href="https://scoutai.site/" rel="noopener">ScoutAI</a>. I design and write the code myself.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 ScoutAI Design · Honolulu, Hawaii</span><span><a href="/">design.scoutai.site</a> · <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></span></div></footer>
+</body>
+</html>

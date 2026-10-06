@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Website teardown for Dawson Dermatology, LLC — ScoutAI Design</title>
+<meta name="description" content="A measured review of https://www.dawsondermatology.com/: speed, search, AI-search readiness and conversion, with fixes and prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/audit.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4e'/%3E%3Cpath d='M16 7l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9v-6l7-3z' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="ScoutAI Design home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ScoutAI Design <span class="sub">Honolulu</span></a>
+  <nav class="nav" aria-label="Primary"><a class="btn btn--primary" href="tel:+14135706737">413-570-6737</a></nav>
+</div></header>
+<main class="report">
+  <div class="report-head">
+    <div class="for">Prepared for Dawson Dermatology, LLC · Honolulu · private link, not indexed</div>
+    <h1>What your website is costing you, measured.</h1>
+    <p class="lede">I ran <a href="https://www.dawsondermatology.com/" rel="noopener">www.dawsondermatology.com</a> through the same checks Google and the AI search engines use. Here is what came back, what it costs you in calls, and what I would fix first.</p>
+    <div class="meta"><span>Checked 2026-10-05 16:08 HST</span><span>Platform: Officite / MH Sub I (Internet Brands) template (&#x27;Copyright © 2026 MH Sub I, LLC dba Officite&#x27;; body class &#x27;new-orleans&#x27;; my.officite.com assets), jQuery 1.11.1, Cloudflare</span></div>
+  </div>
+
+  <div class="scores"><div class="score score--bad"><div class="n">52<small>/100</small></div><div class="l">Technical SEO</div></div><div class="score score--ok"><div class="n">84<small>/100</small></div><div class="l">Performance</div></div><div class="score score--warn"><div class="n">66<small>/100</small></div><div class="l">AI-search readiness</div></div><div class="score score--bad"><div class="n">50<small>/100</small></div><div class="l">Marketing &amp; conversion</div></div></div>
+  <p class="note">Good title/description/canonical; but jQuery 1.11.1 (2014), server answers 501 to HEAD, 338 of 677 sitemap URLs return 403, no &lt;link rel=icon&gt;, a dead Universal Analytics tag plus two GA4 IDs, hidden &#x27;Error!&#x27; modal in the DOM · MedicalClinic JSON-LD with address, telephone, OpeningHoursSpecification and GeoCoordinates; Person microdata; six named providers; two locations; condition pages; OG present but no Twitter card, no FAQPage schema, no llms.txt</p>
+
+  <section>
+    <h2>The five findings that matter</h2>
+    <div class="issue"><div class="num">01</div><div><h3>Half the sitemap is a wall for Google: 338 of 677 URLs are /articles/aad_education_library/...</h3><p>and every one returns HTTP 403 (verified with a browser UA and a Googlebot UA). Google is invited to crawl 338 pages it is forbidden to read - crawl budget wasted and a &#x27;Submitted URL blocked&#x27; error pile in Search Console.</p></div></div><div class="issue"><div class="num">02</div><div><h3>The platform is a decade old: jQuery 1.11.1 (2014) is loaded; the page body is the Officite &#x27;new-orleans&#x27; template; the server rejects HEAD requests with 501 (breaks some link checkers and uptime monitors).</h3><p>Lighthouse best-practices will flag the vulnerable library.</p></div></div><div class="issue"><div class="num">03</div><div><h3>Analytics is double-/triple-tagged: two GA4 properties (G-51L19HQQ46, G-EQH496LMM2) plus a dead Universal Analytics ID (UA-238591326-2, shut off by Google in 2024).</h3><p>The practice is likely looking at the wrong property or inflated numbers.</p></div></div><div class="issue"><div class="num">04</div><div><h3>No online booking.</h3><p>&#x27;Make an appointment&#x27; leads to a form (appointment-request page) - no NexHealth/Zocdoc-style widget. Cosmetic patients book cash-pay procedures at 10 pm; a form means a callback the next business day.</p></div></div><div class="issue"><div class="num">05</div><div><h3>No favicon declared (`favicon: []`), no Twitter card, no map embed or Google Maps link on the home page despite two locations; the hidden `&lt;h2&gt;Error!&lt;/h2&gt;` modal and &#x27;Javascript must be enabled&#x27; banner are template debris.</h3><p></p></div></div>
+    <p class="note">These are measurements, not design opinions. Each one is something your current provider could have run in ten minutes.</p>
+  </section>
+
+  <section>
+    <h2>What I would do in the first week</h2>
+    <ul class="ticks"><li>Remove the /articles/ library from the sitemap or unblock it (ask Officite which) - today it is both listed and forbidden.</li><li>Delete the UA tag and pick one GA4 property.</li><li>Add &lt;link rel=icon&gt;, Twitter card tags and an embedded map per location.</li><li>Add an online booking widget (even a Calendly-style request) on the home page hero.</li><li>Ask Officite to update jQuery; if they cannot, that is the rebuild trigger.</li></ul>
+  </section>
+
+  <div class="offer">
+    <h2>Recommended: rebuild on a platform you own</h2>
+    <p>A rebuild (WordPress with the existing MedicalClinic schema, per-provider pages, per-condition pages that the practice owns, online booking) removes the 403&#x27;d library, the 2014 JavaScript and the vendor lock. The six-provider, two-location practice is the strongest rebuild candidate in this batch.</p><p class="price">Launch build from $2,900 <small>5–7 hand-built pages, schema, Google Business Profile cleanup, analytics, 90+ mobile Lighthouse target, two-week build</small></p><p class="price">Found build from $6,900 <small>Launch plus answer-ready service pages, review pipeline, AI-search baseline report, 30 days of tuning</small></p>
+    <p>Prefer to keep the current site? The one-week tune-up below still applies: $1,800 one-time.</p>
+    <p>Fixed prices, no retainer required, you own everything. First call is free and takes fifteen minutes.</p>
+    <a class="btn btn--primary" href="sms:+14135706737?body=Hi%20Sonny%2C%20I%20read%20the%20Dawson%20Dermatology,%20LLC%20report.">Text Sonny · 413-570-6737</a>
+    <p>Or email <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></p>
+  </div>
+
+  <section class="method">
+    <h2>Evidence and method</h2>
+    <div style="overflow-x:auto"><table class="ev-table"><tr><th>Platform</th><td>Officite / MH Sub I (Internet Brands) template (&#x27;Copyright © 2026 MH Sub I, LLC dba Officite&#x27;; body class &#x27;new-orleans&#x27;; my.officite.com assets), jQuery 1.11.1, Cloudflare</td></tr><tr><th>Checked</th><td>2026-10-05 16:08 HST</td></tr><tr><th>Mobile Lighthouse performance</th><td>80/100</td></tr><tr><th>Largest Contentful Paint (mobile)</th><td>5.1 s (Google&#x27;s good threshold: 2.5 s)</td></tr><tr><th>Desktop performance</th><td>91/100</td></tr><tr><th>Page weight (mobile load)</th><td>776 KB</td></tr><tr><th>Structured data (JSON-LD types)</th><td>GeoCoordinates, MedicalClinic, OpeningHoursSpecification, PostalAddress, WebSite</td></tr><tr><th>Address / phone / hours in schema</th><td>yes / yes / yes</td></tr><tr><th>FAQ schema</th><td>no</td></tr><tr><th>Analytics / pixels found</th><td>GA4, UA, NEWSLETTER, RECAPTCHA, GA_IDS</td></tr><tr><th>Tap-to-call link above the fold (mobile)</th><td>no</td></tr><tr><th>Phone matches BBB listing</th><td>yes</td></tr><tr><th>Footer copyright</th><td>2026</td></tr><tr><th>Sitemap URLs</th><td>677</td></tr><tr><th>Broken internal links (sample)</th><td>9</td></tr></table></div>
+    <p>Performance numbers come from Lighthouse 13.5, the same engine behind Google&#x27;s PageSpeed Insights, run on 2026-10-05 in mobile mode with simulated throttling. Scores vary about ten points between runs; treat them as a range, not a verdict. Structured data, analytics tags, call links and copyright were read directly from the page source. Facebook and Yelp block automated checks, so social activity was not scored. Budget band is an estimate from public signals only (High ($2,500+)).</p>
+    <p>Prepared by Sonny Steele, ScoutAI Design, Honolulu. Fifteen years designing products for banks, healthcare and e-commerce companies; founder of <a href="https://scoutai.site/" rel="noopener">ScoutAI</a>. I design and write the code myself.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 ScoutAI Design · Honolulu, Hawaii</span><span><a href="/">design.scoutai.site</a> · <a href="mailto:sonny@scoutai.site">sonny@scoutai.site</a> · <a href="tel:+14135706737">413-570-6737</a></span></div></footer>
+</body>
+</html>
